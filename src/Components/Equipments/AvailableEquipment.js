@@ -32,6 +32,8 @@ const DUMMY_EQUIPMENTS = [
 const AvailableEquipment = () => {
   const itemsList = DUMMY_EQUIPMENTS.map((item) => (
     <EquipmentItemList
+      itemId={item.id}
+      id={item.id}
       key={item.id}
       name={item.name}
       description={item.description}
